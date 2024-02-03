@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
+const mainMenu = require('./lib/mainMenu.js');
+
+mainMenu();
 //I'm going to have to require alot more, but these for sure
 
 //connect to db

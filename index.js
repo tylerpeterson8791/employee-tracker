@@ -1,29 +1,10 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
 const mainMenu = require('./lib/mainMenu.js');
+// const db = require("../config/connect");
+//don't know if this is just good here or needs to be in all the functions?  Leaning towards all the functions...
 
 mainMenu();
-//I'm going to have to require alot more, but these for sure
-
-//connect to db
-
-//console log that wierd looking ASCII text for title
-
-//The video looks like they formatted the query area?  Research???
-
-//call some sort of main menu function
-//after the prompt put a .then that calls a function for something else.
-
-//Functions Needed (besides main menu)
-
-//View Employees
-//View Departments
-//View Roles
-
-//Add Employee
-//Add Department
-//Add Role
-//UPDATE Employee Role
 
 
 

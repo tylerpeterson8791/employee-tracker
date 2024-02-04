@@ -1,6 +1,24 @@
 const mainMenu = require('./lib/mainMenu.js');
 
-//console.log some ASCII ART here for the intro
+console.log(`
+
+███████ ███    ███ ██████  ██       ██████  ██    ██ ███████ ███████ 
+██      ████  ████ ██   ██ ██      ██    ██  ██  ██  ██      ██      
+█████   ██ ████ ██ ██████  ██      ██    ██   ████   █████   █████   
+██      ██  ██  ██ ██      ██      ██    ██    ██    ██      ██      
+███████ ██      ██ ██      ███████  ██████     ██    ███████ ███████ 
+                                                                     
+                                                                     
+████████ ██████   █████   ██████ ██   ██ ███████ ██████              
+   ██    ██   ██ ██   ██ ██      ██  ██  ██      ██   ██             
+   ██    ██████  ███████ ██      █████   █████   ██████              
+   ██    ██   ██ ██   ██ ██      ██  ██  ██      ██   ██             
+   ██    ██   ██ ██   ██  ██████ ██   ██ ███████ ██   ██             
+                                                                     
+                                                                     
+
+`);
+
 
 mainMenu();
 
@@ -9,10 +27,6 @@ mainMenu();
 
 
 /*
-FIX EXIT APPLICATION.  Don't know how to do that???
-
-Try to add some additional functionality to your application, such as the ability to do the following:
-
 Update employee managers.
 
 View employees by manager.

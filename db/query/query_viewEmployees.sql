@@ -1,20 +1,29 @@
 USE company_db;
 SELECT
-    employee.id AS 'Employee ID',
-    employee.first_name AS 'First Name',
-    employee.last_name AS 'Last Name',
-    role.title AS Title,
-    role.salary AS Salary,
-    department.name AS Department,
+    employee.id AS 'EMPLOYEE ID',
+    employee.first_name AS 'FIRST NAME',
+    employee.last_name AS 'LAST NAME',
     -- CASE is kinda like if/then of sql
+    CASE 
+        WHEN role.title IS NULL THEN '**NEEDS UPDATING**'
+        ELSE role.title 
+    END AS TITLE,
+    CASE 
+        WHEN role.salary IS NULL THEN '**NEEDS UPDATING**'
+        ELSE role.salary 
+    END AS SALARY,
+    CASE 
+        WHEN department.name IS NULL THEN '**NO DEPARTMENT**'
+        ELSE department.name 
+    END AS DEPARTMENT,
     CASE
         -- if null then display **MANAGER**
-        WHEN employee.manager_id IS NULL THEN '**MANAGER**'
+        WHEN employee.manager_id IS NULL THEN '<IS A MANAGER>'
         -- adding this in to indicate when record needs updating
         WHEN manager.id IS NULL THEN '**NEEDS UPDATING**'
         -- or concat together manager's first name and last name as Supervisor END finishes statement
         ELSE CONCAT(manager.first_name, ' ', manager.last_name)
-    END AS Supervisor
+    END AS SUPERVISOR
 FROM
     employee
 LEFT JOIN

@@ -1,3 +1,4 @@
+USE company_db;
 SELECT
     employee.id AS 'Employee ID',
     employee.first_name AS 'First Name',
@@ -9,6 +10,8 @@ SELECT
     CASE
         -- if null then display **MANAGER**
         WHEN employee.manager_id IS NULL THEN '**MANAGER**'
+        -- adding this in to indicate when record needs updating
+        WHEN manager.id IS NULL THEN '**NEEDS UPDATING**'
         -- or concat together manager's first name and last name as Supervisor END finishes statement
         ELSE CONCAT(manager.first_name, ' ', manager.last_name)
     END AS Supervisor
@@ -25,4 +28,4 @@ LEFT JOIN
 
     -- this is getting a little unruly in the one line.
     -- I still want to replace null with something else
-    -- otherwise this is working correctly
+    -- Looked into it and it's displaying null when the id doesn't match anything.  I could maybe write logic to display "NEEDS UPDATE" when it doesn't match anything.  It'd be on Line 13ish.

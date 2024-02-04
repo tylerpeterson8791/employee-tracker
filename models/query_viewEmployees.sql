@@ -14,9 +14,9 @@ SELECT
     END AS Supervisor
 FROM
     employee
-JOIN
+LEFT JOIN
     role ON employee.role_id = role.id
-JOIN
+LEFT JOIN
     department ON role.department_id = department.id
 -- have to use LEFT JOIN because it's merging with NULL values
 LEFT JOIN

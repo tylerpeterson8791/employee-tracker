@@ -27,10 +27,6 @@ mainMenu();
 
 
 /*
-Update employee managers.
-
-View employees by manager.
-
 View employees by department.
 
 Delete departments, roles, and employees.

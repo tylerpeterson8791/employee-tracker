@@ -27,9 +27,9 @@ mainMenu();
 
 
 /*
-View employees by department.
-
 Delete departments, roles, and employees.
+IF i delete a role that is assigned to an employee what happens?  Same with department?  What if I delete an employee who is a manager?
+
 
 View the total utilized budget of a department—in other words, the combined salaries of all employees in that department.
 

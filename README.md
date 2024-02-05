@@ -50,18 +50,18 @@
 
   There’s a few resources I referenced during the course of creating this project.  
 
-  I needed to figure out a way to pull the data out of the returned array to put into Inquirer format.  Often I used .map() method for this.  [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  I needed to figure out a way to pull the data out of the returned array to put into Inquirer format.  Often I used .map() method for this.  [.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-  For displaying the data to the user I went with console.table().  As previously stated, I wish there was a way to hide the index column but haven't found a way to do it.  Regardless, it looks very clean and I like that. https://developer.mozilla.org/en-US/docs/Web/API/console/table_static
+  For displaying the data to the user I went with console.table().  As previously stated, I wish there was a way to hide the index column but haven't found a way to do it.  Regardless, it looks very clean and I like that. [console.table](https://developer.mozilla.org/en-US/docs/Web/API/console/table_static)
 
- There were multiple times where I needed to combine data to display to the user as a list option (mostly First Name and Last Name) so I used CONCAT in the SQL queries.  https://www.w3schools.com/sql/func_sqlserver_concat.asp
+ There were multiple times where I needed to combine data to display to the user as a list option (mostly First Name and Last Name) so I used CONCAT in the SQL queries.  [SQL CONCAT](https://www.w3schools.com/sql/func_sqlserver_concat.asp)
 
- Using LEFT JOIN allowed me to stop the select from scrubbing out incomplete data at the JOIN.  This resource does a great job explaining how that works and the visual it provides really clicked for me.  https://www.w3schools.com/sql/sql_join_left.asp
+ Using LEFT JOIN allowed me to stop the select from scrubbing out incomplete data at the JOIN.  This resource does a great job explaining how that works and the visual it provides really clicked for me.  [LEFT JOIN](https://www.w3schools.com/sql/sql_join_left.asp)
 
- For displaying the data I had a bunch of either/or scenarios.  CASE in sql works kind of like a if/then statement in javascript.  Using these allowed me to assign an AS to the null values making the process easier for the user to desipher which employees need updating.  https://mode.com/sql-tutorial/sql-case
+ For displaying the data I had a bunch of either/or scenarios.  CASE in sql works kind of like a if/then statement in javascript.  Using these allowed me to assign an AS to the null values making the process easier for the user to desipher which employees need updating.  [CASE](https://mode.com/sql-tutorial/sql-case)
 
- For the welcome page I used this website to generate the ASCII text.  Tons of options, easy to use.  https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+ For the welcome page I used this website to generate the ASCII text.  Tons of options, easy to use.  [ASCII](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
-To exit the application I needed to look up how to do that.  I found this info on process.exit() to be very helpful!  https://www.geeksforgeeks.org/node-js-process-exit-method/#
+To exit the application I needed to look up how to do that.  I found this info on process.exit() to be very helpful!  [process.exit](https://www.geeksforgeeks.org/node-js-process-exit-method/#)
 
-  Finally a big thanks for my instructor Gary for explaining things so well in class and for extending the deadline of this project!
+Finally a big thanks for my instructor Gary for explaining things so well in class and for extending the deadline of this project!

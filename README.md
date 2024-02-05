@@ -50,7 +50,7 @@
 
   There’s a few resources I referenced during the course of creating this project.  
 
-  I needed to figure out a way to pull the data out of the returned array to put into Inquirer format.  Often I used .map() method for this.  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+  I needed to figure out a way to pull the data out of the returned array to put into Inquirer format.  Often I used .map() method for this.  [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
   For displaying the data to the user I went with console.table().  As previously stated, I wish there was a way to hide the index column but haven't found a way to do it.  Regardless, it looks very clean and I like that. https://developer.mozilla.org/en-US/docs/Web/API/console/table_static
 
